@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="flex justify-around items-center w-full h-40 border border-gray-300">
+        <img class="w-32" src="resources/uniminuto.png" alt="Logo Uniminuto">
+        <h3 class="text-3xl font-semibold">
+          Ingeniería de software
+        </h3>
+    </header>
+    
+    <!--BODY-->
+    <div class="flex justify-center w-full">
+        <div class="p-16 text-center">
+            <!--TITLE-->
+            <h1 class="text-3xl font-sans font-semibold">Contador</h1>
+            
+            <!--NUMBER-->
+            <p class="p-12 text-2xl font-normal" id="contador">
+                0
+            </p>
+            
+            <!--DIV CONTAINER-->
+            <div class="flex w-48 h-40 justify-evenly items-center flex-col">
+                <!--BUTTONS +1 AND -1 -->
+                <div class="flex w-full justify-evenly">
+                    <button class="border border-green-500 px-7 py-4 rounded-xl text-green-600 shadow-md" type="submit" id="sumar">
+                        +1
+                    </button>
+            
+                    <button class="border border-red-500 px-7 py-4 rounded-xl text-red-600 shadow-md" type="submit" id="restar">
+                        -1
+                    </button>
+                </div>
+                <!--RESET-->
+                <button class="border border-gray-500 px-12 py-4 text-center rounded-xl text-gray-600 shadow-md" type="submit" id="reset">
+                    Reiniciar
+                </button>
+            </div>
+        
+        </div>
+    </div>      
+
+    <script src="resources/js.js"></script>  
+</body>
+</html>
